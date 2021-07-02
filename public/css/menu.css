@@ -1,0 +1,164 @@
+.dashboard-div,
+.breadcrumb-div{
+  width: 100%;
+  display: flex !important;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.ui.vertical.menu .item>i.icon{
+  float: left;
+  margin-right: 0.5em;
+}
+
+#sidebar{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background: #343a40;
+  color: white !important;
+  padding-top: 4rem;
+}
+
+#sidebar > div > *,
+#charts-dropdown-menu > *{
+  color: #c2c7d0 !important;
+  font-size: 16px !important;
+}
+
+#sidebar > div > a:hover,
+.dropdown > .charts-dropdown:hover,
+#charts-dropdown-menu > *:hover{
+  color: white !important;
+  background-color: rgba(78,80,84,0.7) !important;
+}
+
+#sidebar > div > a:hover .hover-col,
+.dropdown > .charts-dropdown:hover .hover-col-dd,
+#charts-dropdown-menu > *:hover .hover-col-dd-item{
+  visibility: visible;
+}
+
+.sidebar-bottom{
+  margin-top: auto;
+}
+
+.ui.sidebar {
+  overflow: visible !important;
+}
+
+.ui.dropdown .menu{
+  position: initial;
+}
+
+.top-right-icons{
+  display: flex;
+  justify-content: center;
+}
+.top-right-icons > *{
+  display: inline-block !important;
+}
+
+#user-icon{
+  margin-right: 5px;
+}
+
+.dd-inner-pd{
+  padding: .92857143em 1.14285714em;
+}
+
+.custom-icon{
+  margin: 0 .25rem 0 0;
+}
+
+#charts-dropdown-menu{
+  background: #343a40;
+}
+
+.ui.menu .item:before{
+  width: revert;
+}
+
+.ui.attached.menu:not(.tabular) {
+  border: 0;
+  border-bottom: 1px solid #d4d4d5;
+}
+
+.ui.menu .item{
+  padding: 1.4em 1em;
+}
+
+.ui.menu .ui.dropdown .menu > .item{
+  padding: 1rem 2rem !important;
+}
+
+.ui.menu .ui.dropdown .menu > .item .icon:not(.dropdown) {
+  font-size: 10px !important;
+}
+
+.menu-inner-div{
+  min-width: 1150px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.hover-col,
+.hover-col-dd,
+.hover-col-dd-item{
+  visibility: hidden;
+  background-color: rgba(232, 235, 70, 0.5);
+  width: 3px;
+  height: 36px;
+  position: absolute;
+  top: -10px;
+  left: -11px;
+}
+
+.hover-col-dd{
+  left: 5px;
+  top: 13px;
+}
+
+.hover-col-dd-item{
+  height: 25px;
+  left: 17px;
+  top: 10px;
+}
+
+.ui.breadcrumb{
+  font-size: 1.1rem;
+  margin-left: 10px;
+}
+
+.ui.menu.fixed{
+  z-index: 201;
+}
+
+.sticky-top-menu{
+  background: #f4f6f9 !important;
+}
+
+@media only screen and (max-width: 1199px){
+  .menu-inner-div{
+    min-width: 952px;
+  }
+}
+
+@media only screen and (max-width: 991px){
+  .menu-inner-div{
+    min-width: 742px;
+  }
+}
+
+@media only screen and (max-width: 767px){
+  .menu-inner-div{
+    min-width: unset;
+    width: 100vw;
+  }
+
+  .ui.container {
+    width: auto!important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}

@@ -1,0 +1,136 @@
+.d-n{
+  display: none;
+}
+
+table.dataTable.table thead th.sorting:after, 
+table.dataTable.table thead td.sorting:after,
+table.dataTable.table thead th.sorting_asc:after, 
+table.dataTable.table thead td.sorting_asc:after,
+table.dataTable.table thead th.sorting_desc:after, 
+table.dataTable.table thead td.sorting_desc:after{
+  visibility: hidden !important;
+}
+
+#datatable{
+  width: -webkit-fill-available;
+  font-size: 18px;
+}
+
+#datatable_wrapper{
+  width: inherit;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.dataTables_length{
+  margin-bottom: 1rem;
+}
+
+table.dataTable thead th, table.dataTable thead td {
+  padding: 8px 10px !important;
+}
+
+table {
+  table-layout: fixed;
+  width: 100%;
+}
+td {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.text{
+  padding: .78571429rem 1.14285714rem !important;
+}
+
+#edit-housetypes-dp,
+#edit-rooms-dp,
+#add-housetypes-dp,
+#add-rooms-dp{
+  padding: 0;
+}
+
+div.default{
+  color: rgba(0,0,0,.87) !important;
+}
+
+.modal-price-sign{
+  position: absolute;
+  bottom: 12px;
+  left: 15px;
+  font-size: 15px;
+}
+
+.dataTables_length{
+  font-size: 16px;
+}
+
+.dataTables_length select {
+  min-height: unset !important;
+}
+
+.dataTables_filter input {
+  padding: 0.5rem;
+  border: 1px solid black;
+  border-radius: 5px;
+  outline-offset: unset;
+  outline: unset;
+}
+
+.dataTables_filter input:focus{
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.primary.basic.button.edit-button,
+.negative.basic.button.delete-button{
+  transition: 0.3s !important;
+}
+
+.primary.basic.button.edit-button:hover{
+  color:white !important;
+  background-color: #2185d0!important;
+}
+
+.negative.basic.button.delete-button:hover{
+  color:white !important;
+  background-color: #d01919!important;
+}
+
+input[type="checkbox"]{
+  width: 14px;
+  height: 14px;
+}
+
+.dt-custom-buttons{
+  position: absolute;
+  top: 129px;
+  left: 0;
+  z-index: 2;
+}
+
+@media only screen and (max-width: 767px){
+  table.dataTable thead .sorting_asc {
+    background-repeat: no-repeat !important;
+    background-position: 62px 3px !important;
+  }
+  table.dataTable thead .sorting_desc {
+    background-repeat: no-repeat !important;
+    background-position: 62px 3px !important;
+  }
+  .datatable-div{
+    display: block !important;
+  }
+  .dt-custom-buttons{
+    top: 109px;
+    left: 0;
+  }
+}
+
+@media only screen and (max-width: 640px){
+  .dt-custom-buttons{
+    top: 147px;
+    left: 0;
+  }
+}
